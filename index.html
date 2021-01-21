@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF8">
+        <title>Multi Theft Auto</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no shrink-to-fit=no">
+        <meta name="robots" content="index">
+        <link rel="stylesheet/less" type="text/css" href="cdn/stylesheets/index.less"/>
+        <style>
+            #render {
+                display: none;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="render"></div>
+
+        <script src="cdn/scripts/preact.min.js"></script>
+        <script src="cdn/scripts/less.min.js" ></script>
+        <script src="main.js" type="text/javascript"></script>
+        <script>
+            less.pageLoadFinished.then(() => document.querySelector('#render').style.display = 'block');
+        </script>
+    </body>
+</html>
